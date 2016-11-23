@@ -104,7 +104,7 @@ let s:palette.gui.comment    = { 'dark' : s:gui_comment    , 'light' : "#5f5f5f"
 let s:palette.gui.red        = { 'dark' : "#cc6666"        , 'light' : "#5f0000" }
 let s:palette.gui.orange     = { 'dark' : "#de935f"        , 'light' : "#875f00" }
 let s:palette.gui.yellow     = { 'dark' : "#f0c674"        , 'light' : "#5f5f00" }
-let s:palette.gui.green      = { 'dark' : "#b5bd68"        , 'light' : "#005f00" }
+let s:palette.gui.green      = { 'dark' : "#cad095"        , 'light' : "#005f00" }
 let s:palette.gui.aqua       = { 'dark' : "#8abeb7"        , 'light' : "#005f5f" }
 let s:palette.gui.blue       = { 'dark' : "#81a2be"        , 'light' : "#00005f" }
 let s:palette.gui.purple     = { 'dark' : "#b294bb"        , 'light' : "#5f005f" }
@@ -141,7 +141,7 @@ else
   let s:cterm_red        = "167"
   let s:cterm_orange     = "173"
   let s:cterm_yellow     = "221"
-  let s:cterm_green      = "143"
+  let s:cterm_green      = "144" " previous -> 143
   let s:cterm_aqua       = "109"
   let s:cterm_blue       = "110"
   let s:cterm_purple     = "139"
@@ -451,3 +451,15 @@ let &background = s:style
 " THE SOFTWARE.
 
 " }}}
+
+" My tweaks (scwood)
+hi ColorColumn cterm=none ctermbg=234 ctermfg=none
+hi Normal ctermbg=none
+hi StatusLine cterm=none ctermbg=none ctermfg=white
+hi StatusLineNC cterm=none ctermbg=none ctermfg=240
+hi TabLine cterm=none ctermfg=240 ctermbg=none
+hi TabLineFill cterm=none ctermfg=none ctermbg=none
+hi TabLineSel cterm=none ctermfg=white ctermbg=none
+
+" Logan's tweaks
+hi VertSplit ctermfg=244 ctermbg=232   cterm=bold
